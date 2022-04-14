@@ -1,0 +1,84 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+body {
+	background-color: black;
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.wrapper {
+	width: 25em;
+}
+.input-container {
+	position: relative;
+	background-color: #ffffff;
+	width: inherit;
+	height: 4.4em;
+	border-radius: 5px;
+}
+a {
+	display: block;
+	width: inherit;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 1.4em;
+	text-align: center;
+	position: relative;
+	padding: 0.7em 0;
+	margin-top: 1.8em;
+	text-decoration: none;
+	border-radius: 7px;
+}
+input {
+	outline: none;
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	color: #000000;
+	font-size: 25px;
+	padding: 0 18px;
+	z-index: 3;
+}
+#suggestion {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 0 18px;
+	font-size: 25px;
+	color: #868686;
+}
+.fab {
+	color: #ff0000;
+}
+@media screen and (max-width: 576px) {
+	.wrapper {
+		width: 80vw;
+	}
+	input,
+	#suggestion {
+		font-size: 16px;
+	}
+}
